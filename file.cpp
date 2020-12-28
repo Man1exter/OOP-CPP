@@ -1,7 +1,15 @@
+#pragma​ warning(disable: 4996)
+#include <iostream>
 #include <string>
 
 using namespace std;
 
-main (){
-    
+int main (){
+
+
+
+
+
+
+return 0;
 }
