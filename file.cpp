@@ -7,9 +7,11 @@
 
 using namespace std;
 
+
+int iloscLiczb;
+int liczby;
+
 class liczby{
-
-
 
 
 private:
