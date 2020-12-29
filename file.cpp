@@ -9,7 +9,7 @@ using namespace std;
 
 
 
-int tab[]
+int maxLiczb;
 
 
 
@@ -17,8 +17,7 @@ class liczby{
 
 private:
 
- int iloscLiczb;
- int liczby;
+
  void czytajDane();
  void sortujDane();
 
@@ -34,7 +33,14 @@ void wyswietlWynik();
 
 int main(){
 
+cout << "Podaj ile max liczb chcesz wprowadzic: " << endl;
+cin >> maxLiczb;
 
+if(!maxLiczb){
+    cout << "Wprowadzone zostały niedozwolone znaki" << endl;
+} else {
+    cout << "Wprowadziles max liczb: " << maxLiczb << endl;
+}
 
 
 
