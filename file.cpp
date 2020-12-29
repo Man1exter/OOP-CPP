@@ -1,6 +1,7 @@
 #pragma​ warning(disable: 4996)
 #include <iostream>
 #include <algorithm>
+#include <math.h>
 
 using namespace std;
 
@@ -16,8 +17,8 @@ int maxLiczb;
 int liczby;
 int tab[];
 
-void czytajDane();
-void sortujDane();
+void czytaj_dane();
+void sortuj_dane();
 
 
 public:
@@ -33,12 +34,33 @@ int main()
 {
 
 Panel liczb;
+liczb.przetwarzaj();
 
 return 0;
 }
 
 
-void czytajDane
+void Panel::czytaj_dane()
+{
+cout << "Podaj ile liczb chcesz posortowac: " << endl;
+cin >> maxLiczb;
+}
+
+
+
+
+
+
+
+
+
+
+void Panel::przetwarzaj()
+{
+    czytaj_dane();
+    sortuj_dane();
+    wyswietl_wynik();
+}
 
 // Napisz samodzielnie,  zgodnie z zasadami programowania obiektowego program, który posortuje​ n​ liczb.
 //  Klasa powinna zawierać dwie metody prywatne:  ●  czytaj_dane()​ - odczytuje dane i umieszcza je w tablicy ● sortuj_dane() ​- sortuje dane,
