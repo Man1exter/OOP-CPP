@@ -1,67 +1,60 @@
-#pragma​ warning(disable: 4996)
 #include <iostream>
-#include <stdio.h>
-#include <conio.h>
-#include <math.h>
 #include <algorithm>
+
 
 using namespace std;
 
 
-const int maxLiczb = 256;
+const int LIMIT = 256;
 
-
-class Panel
+class Dane
 {
-
-double liczby[maxLiczb];
-int ilosc;
+    double liczby[LIMIT];
+    int suma;
+public:
+    Dane() {suma = 0;}
+    int wprowadz_dane();
+    void sortuj(int ilosc);
 
 private:
-
-
-int czytajDane();
-void sortujDane();
-
-public:
-
-void wyswietlWynik();
-
+    void wyswietl_wynik(int ilosc);
 };
 
-
-
-
-
-int main(){
-
-Panel Sortujacy;
-
-int wartosci = Panel.czytajDane();
-Panel.sortujDane(wartosci);
-Panel.wyswietlWynik(wartosci);
-
-return 0;
-}
-
-
-int Dane::czytajDane()
+int main()
 {
-
-cout << "Wprowadz liczby" << endl;
-for( let i = 0 ; i < maxLiczb ; i++ ){
-    cin >> liczby[i];
+    Dane Elo;
+    int wartosci = Elo.wprowadz_dane();
+    Elo.sortuj(wartosci);
+    Elo.wyswietl_wynik(wartosci);
+    return 0;
 }
+int Dane::wprowadz_dane()
+{
+    cout << "Podaj liczby (znak niebedacy cyfra konczy wprowadzanie):\n";
+    for (int i = 0; i < LIMIT; i++)
+    {
+        cin >> liczby[i];
+        if (!cin)
+        {
+            cin.clear();
+            cin.sync();
+            break;
+        }
+        ++suma;
+    }
+    return suma;
 }
 
-void Dane::sortujDane(int ilosc){
-sort(liczby, liczby + ilosc);
+void Dane::sortuj(int ilosc)
+{
+    sort (liczby, liczby + ilosc);
 }
 
-void Dane::wyswietlWynik(int ilosc){
-cout << endl << "Po posortowaniu liczby: ";
-for (int i = 0; i < ilosc; i++)
-cout << liczby[i] << endl;
+void Dane::wyswietl_wynik(int ilosc)
+{
+    cout << endl << "Posortowane wartosci:\n";
+    for (int i = 0; i < ilosc; i++)
+        cout << liczby[i] << endl;
 }
 
 // Napisz samodzielnie,  zgodnie z zasadami programowania obiektowego program, który posortuje​ n​ liczb.
