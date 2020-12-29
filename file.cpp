@@ -8,18 +8,20 @@
 using namespace std;
 
 
-
-int maxLiczb;
-
+const int maxLiczb = 256;
 
 
-class liczby{
+class Panel
+{
+
+double liczby[maxLiczb];
+int ilosc;
 
 private:
 
 
- void czytajDane();
- void sortujDane();
+int czytajDane();
+void sortujDane();
 
 public:
 
@@ -33,20 +35,35 @@ void wyswietlWynik();
 
 int main(){
 
-cout << "Podaj ile max liczb chcesz wprowadzic: " << endl;
-cin >> maxLiczb;
+Panel Sortujacy;
 
-if(!maxLiczb){
-    cout << "Wprowadzone zostały niedozwolone znaki" << endl;
-} else {
-    cout << "Wprowadziles max liczb: " << maxLiczb << endl;
-}
-
-
-
+int wartosci = Panel.czytajDane();
+Panel.sortujDane(wartosci);
+Panel.wyswietlWynik(wartosci);
 
 return 0;
 }
+
+
+int Dane::czytajDane()
+{
+
+cout << "Wprowadz liczby" << endl;
+for( let i = 0 ; i < maxLiczb ; i++ ){
+    cin >> liczby[i];
+}
+}
+
+void Dane::sortujDane(int ilosc){
+sort(liczby, liczby + ilosc);
+}
+
+void Dane::wyswietlWynik(int ilosc){
+cout << endl << "Po posortowaniu liczby: ";
+for (int i = 0; i < ilosc; i++)
+cout << liczby[i] << endl;
+}
+
 // Napisz samodzielnie,  zgodnie z zasadami programowania obiektowego program, który posortuje​ n​ liczb.
 //  Klasa powinna zawierać dwie metody prywatne:  ●  czytaj_dane()​ - odczytuje dane i umieszcza je w tablicy ● sortuj_dane() ​- sortuje dane,
 //   korzystając z wybranego algorytmu
