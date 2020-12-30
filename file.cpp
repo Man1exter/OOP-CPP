@@ -2,6 +2,7 @@
 #include <iostream>
 #include <algorithm>
 #include <math.h>
+#include <vector>
 
 using namespace std;
 
@@ -23,7 +24,8 @@ void sortuj_dane();
 
 public:
 
-void wyswietlWynik();
+void wyswietl_wynik();
+void przetwarzaj();
 
 };
 
@@ -44,6 +46,29 @@ void Panel::czytaj_dane()
 {
 cout << "Podaj ile liczb chcesz posortowac: " << endl;
 cin >> maxLiczb;
+
+
+cout << "Podaj te liczby: " << endl;
+cin >> liczby;
+
+tab[maxLiczb] = {liczby};
+
+for(int i = 0; i<sizeof(tab[i])/sizeof(tab[0]); i++){
+    cout << tab[i] << endl;
+}
+}
+
+
+
+void Panel::sortuj_dane()
+{
+cout << "Podaj ile liczb chcesz posortowac:" << endl;
+}
+
+
+void Panel::wyswietl_wynik()
+{
+cout << "Podaj ile liczb chcesz posortowac:" << endl;
 }
 
 
