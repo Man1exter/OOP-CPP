@@ -55,8 +55,8 @@ cin >> liczby;
 tab.push_back(liczby);
 }
 
-for(auto i : tab){
-    cout<< i << endl;
+for(auto i: tab){
+    cout << i << endl;
 }
 }
 
