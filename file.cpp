@@ -51,26 +51,33 @@ cin >> maxlLiczby;
 cout << "Podaj te liczby: " << endl;
 for(int i = 0; i < maxlLiczby; i++){
 
+cout << endl;
+
 cin >> liczby;
+cout << "Twoje liczby PRZED sortowaniem: " << endl;
 tab.push_back(liczby);
 }
 
 for(auto i: tab){
     cout << i << endl;
 }
+cout << endl;
 }
 
 
 
 void Panel::sortuj_dane()
 {
-cout << "Podaj ile liczb chcesz posortowac:" << endl;
+sort(tab)
 }
 
 
 void Panel::wyswietl_wynik()
 {
-cout << "Podaj ile liczb chcesz posortowac:" << endl;
+cout << "Twoje liczby PO sortowaniu: " << endl;
+for(auto i: tab){
+    cout << i << endl;
+}
 }
 
 
