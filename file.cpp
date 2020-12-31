@@ -14,7 +14,7 @@ class Panel
 
 private:
 
-int maxlLiczby;
+int maxLiczby;
 int liczby;
 vector <int> tab;
 
@@ -46,10 +46,10 @@ void Panel::czytaj_dane()
 {
 
 cout << "Podaj ile liczb chcesz posortowac: " << endl;
-cin >> maxlLiczby;
+cin >> maxLiczby;
 
 cout << "Podaj te liczby: " << endl;
-for(int i = 0; i < maxlLiczby; i++){
+for(int i = 0; i < maxLiczby; i++){
 
 cout << endl;
 
@@ -68,7 +68,7 @@ cout << endl;
 
 void Panel::sortuj_dane()
 {
-sort(tab)
+sort( tab.begin(), tab.end());
 }
 
 
