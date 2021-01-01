@@ -3,6 +3,8 @@
 #include <algorithm>
 #include <math.h>
 #include <vector>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -24,8 +26,16 @@ public:
 
 Panel()
 {
-cout << "Podaj ile liczb chcesz aby randomowo posortowalo: " << endl;
+
+srand(int(time(NULL)));
+cout << "Podaj ile liczb chcesz aby randomowo posortowano w tablicy: " << endl;
 cin >> maxLiczby;
+
+for(int i = 0; i < maxLiczby; i++){
+    // liczby = tab[i];
+    tab[i] = rand() % 7;
+}
+
 }
 
 void wyswietl_wynik();
@@ -44,32 +54,9 @@ return 0;
 }
 
 
-// void Panel::czytaj_dane()
-// {
-
-// cout << "Podaj ile liczb chcesz posortowac: " << endl;
-// cin >> maxLiczby;
-
-// cout << "Podaj te liczby: " << endl;
-// for(int i = 0; i < maxLiczby; i++){
-
-// cout << endl;
-
-// cin >> liczby;
-// cout << "Twoje liczby PRZED sortowaniem: " << endl;
-// tab.push_back(liczby);
-// }
-
-// for(auto i: tab){
-//     cout << i << endl;
-// }
-// cout << endl;
-// }
-
-
 void Panel::sortuj_dane()
 {
-sort( tab.begin(), tab.end());
+sort( tab.begin(), tab.end() );
 }
 
 
@@ -84,7 +71,6 @@ for(auto i: tab){
 
 void Panel::przetwarzaj()
 {
-    // czytaj_dane();
     sortuj_dane();
     wyswietl_wynik();
 }

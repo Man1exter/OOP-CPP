@@ -1,2 +1,1 @@
-
-cin >> maxlLiczby;
+liczby = tab[i];
