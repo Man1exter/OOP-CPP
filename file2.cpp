@@ -3,6 +3,8 @@
 #include <algorithm>
 #include <math.h>
 #include <vector>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -44,23 +46,34 @@ liczb.przetwarzaj();
 return 0;
 }
 
+Panel::Panel(){
+    czytaj_dane();
+    cout << "Randomowe liczby zostaly dodane do tablicy " << endl;
+}
+
+Panel::~Panel(){
+    cout << endl;
+    cout << "Tablica zostala wyzerowana z randomowych liczb" << endl;
+    cout << endl;
+}
 
 void Panel::czytaj_dane()
 {
 
-cout << "Podaj ile liczb chcesz posortowac: " << endl;
+srand( time( NULL ) );
+cout << "Podaj ile randomowych liczb chcesz posortowac: " << endl;
 cin >> maxLiczby;
 
-cout << "Podaj te liczby: " << endl;
+
 for(int i = 0; i < maxLiczby; i++){
 
-cout << endl;
+liczby = (( rand() % 99 ) + 1 );
 
-cin >> liczby;
-cout << "Twoje liczby PRZED sortowaniem: " << endl;
 tab.push_back(liczby);
 }
 
+cout << "Twoje randomowe liczby PRZED sortowaniem: " << endl;
+cout << endl;
 for(auto i: tab){
     cout << i << endl;
 }
@@ -71,7 +84,7 @@ cout << endl;
 
 void Panel::sortuj_dane()
 {
-sort( tab.begin(), tab.end() );
+sort( tab.begin(), tab.end());
 }
 
 
@@ -99,4 +112,4 @@ void Panel::przetwarzaj()
 // Zawartość posortowanej tablicy powinna zostać wyświetlona na ekranie monitora za pomocą publicznej
 // metody ​wyswietl_wynik​.
 
-// Zapewnij, żeby tablica została wyczyszczona przy wyjściu z programu. Wykorzystaj do tego destruktor, który usunie wartości liczbowe z tablicy i poinformuje o tym użytkownika za /// pomocą stosownego komunikatu.
+// Zapewnij, żeby tablica została wyczyszczona przy wyjściu z programu. Wykorzystaj do tego destruktor, który usunie wartości liczbowe z tablicy i poinformuje o tym użytkownika za pomocą stosownego komunikatu.
