@@ -20,7 +20,7 @@ int maxLiczby;
 int liczby;
 vector <int> tab;
 
-void czytaj_dane();
+// void czytaj_dane();
 void sortuj_dane();
 
 
@@ -47,20 +47,8 @@ return 0;
 }
 
 Panel::Panel(){
-    czytaj_dane();
-    cout << "Randomowe liczby zostaly dodane do tablicy " << endl;
-}
 
-Panel::~Panel(){
-    cout << endl;
-    cout << "Tablica zostala wyzerowana z randomowych liczb" << endl;
-    cout << endl;
-}
-
-void Panel::czytaj_dane()
-{
-
-srand( time( NULL ) );
+    srand( time( NULL ) );
 cout << "Podaj ile randomowych liczb chcesz posortowac: " << endl;
 cin >> maxLiczby;
 
@@ -78,7 +66,37 @@ for(auto i: tab){
     cout << i << endl;
 }
 cout << endl;
+    cout << "Randomowe liczby zostaly dodane do tablicy " << endl;
 }
+
+Panel::~Panel(){
+    cout << endl;
+    cout << "Tablica zostala wyzerowana z randomowych liczb" << endl;
+    cout << endl;
+}
+
+// void Panel::czytaj_dane()
+// {
+
+// srand( time( NULL ) );
+// cout << "Podaj ile randomowych liczb chcesz posortowac: " << endl;
+// cin >> maxLiczby;
+
+
+// for(int i = 0; i < maxLiczby; i++){
+
+// liczby = (( rand() % 99 ) + 1 );
+
+// tab.push_back(liczby);
+// }
+
+// cout << "Twoje randomowe liczby PRZED sortowaniem: " << endl;
+// cout << endl;
+// for(auto i: tab){
+//     cout << i << endl;
+// }
+// cout << endl;
+// }
 
 
 
@@ -100,7 +118,7 @@ for(auto i: tab){
 
 void Panel::przetwarzaj()
 {
-    czytaj_dane();
+    // czytaj_dane();
     sortuj_dane();
     wyswietl_wynik();
 }
