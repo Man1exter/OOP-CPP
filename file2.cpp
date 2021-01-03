@@ -3,10 +3,11 @@
 #include <algorithm>
 #include <math.h>
 #include <vector>
-#include <cstdlib>
-#include <ctime>
 
 using namespace std;
+
+
+
 
 class Panel
 {
@@ -17,29 +18,21 @@ int maxLiczby;
 int liczby;
 vector <int> tab;
 
-
+void czytaj_dane();
 void sortuj_dane();
 
 
 public:
 
-Panel(){
-
-    cout << "Ile losowych liczb? " << endl;
-    cin >> maxLiczby;
-
-}
-
 void wyswietl_wynik();
 void przetwarzaj();
 
-~ Panel(){
-    cout << endl;
-    cout << "Tablica zostala wyczyszczona" << endl;
-    cout << endl;
-}
+Panel();
+~Panel();
 
 };
+
+
 
 
 int main()
@@ -50,6 +43,30 @@ liczb.przetwarzaj();
 
 return 0;
 }
+
+
+void Panel::czytaj_dane()
+{
+
+cout << "Podaj ile liczb chcesz posortowac: " << endl;
+cin >> maxLiczby;
+
+cout << "Podaj te liczby: " << endl;
+for(int i = 0; i < maxLiczby; i++){
+
+cout << endl;
+
+cin >> liczby;
+cout << "Twoje liczby PRZED sortowaniem: " << endl;
+tab.push_back(liczby);
+}
+
+for(auto i: tab){
+    cout << i << endl;
+}
+cout << endl;
+}
+
 
 
 void Panel::sortuj_dane()
@@ -67,8 +84,10 @@ for(auto i: tab){
 }
 
 
+
 void Panel::przetwarzaj()
 {
+    czytaj_dane();
     sortuj_dane();
     wyswietl_wynik();
 }
@@ -80,4 +99,4 @@ void Panel::przetwarzaj()
 // Zawartość posortowanej tablicy powinna zostać wyświetlona na ekranie monitora za pomocą publicznej
 // metody ​wyswietl_wynik​.
 
-// Zapewnij, żeby tablica została wyczyszczona przy wyjściu z programu. Wykorzystaj do tego destruktor, który usunie wartości liczbowe z tablicy i poinformuje o tym użytkownika za pomocą stosownego komunikatu.
+// Zapewnij, żeby tablica została wyczyszczona przy wyjściu z programu. Wykorzystaj do tego destruktor, który usunie wartości liczbowe z tablicy i poinformuje o tym użytkownika za /// pomocą stosownego komunikatu.
