@@ -23,22 +23,21 @@ void sortuj_dane();
 
 public:
 
-Panel()
-{
+Panel(){
 
-srand(int(time(NULL)));
-cout << "Podaj ile liczb chcesz aby randomowo posortowano w tablicy: " << endl;
-cin >> maxLiczby;
-
-for(int i = 0; i < maxLiczby; i++){
-    // liczby = tab[i];
-    tab[i] = rand() % 7;
-}
+    cout << "Ile losowych liczb? " << endl;
+    cin >> maxLiczby;
 
 }
 
 void wyswietl_wynik();
 void przetwarzaj();
+
+~ Panel(){
+    cout << endl;
+    cout << "Tablica zostala wyczyszczona" << endl;
+    cout << endl;
+}
 
 };
 
