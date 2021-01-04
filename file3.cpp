@@ -18,8 +18,9 @@ int main(){
 
 // Klasa powinna zawierać następujące metody:
 
-// ●podaj_wspolczynniki​ - zapisuje w odpowiednich ​polach klasy​ odczytane wartości współczynników​ a,b,c,​zapytanie o współczynniki powinno zostać zainicjalizowaneprzez konstruktor klasy
+// ● podaj_wspolczynniki​ - zapisuje w odpowiednich ​polach klasy​ odczytane wartości współczynników​ a,b,c,
+//       ​zapytanie o współczynniki powinno zostać zainicjalizowane przez konstruktor klasy
 
-// ●oblicz_pierwiastki​ - oblicza pierwiastki wykorzystując instrukcję wyboru ​switch
+// ● oblicz_pierwiastki​ - oblicza pierwiastki wykorzystując instrukcję wyboru ​switch
 
-// ●wyswietl_wynik​
+// ● wyswietl_wynik​
