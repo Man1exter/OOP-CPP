@@ -5,20 +5,30 @@
 #include <math.h>
 #include <ctime>
 
-
-
 using namespace std;
+
+class Panel
+{
+
+private:
+
+
+
+public:
+
+
+}
 
 
 int main(){
 
-
-
-
-
+Panel pierwiastkowy;
+pierwiastkowy.przetwarzaj();
 
     return 0;
 }
+
+
 
 // Zaprojektuj klasę, której zadaniem jest obliczenie pierwiastków równania kwadratowego ax​2​ + bx + c​ = 0.
 
