@@ -12,10 +12,12 @@ class Panel
 
 private:
 
-
+oblicz_pierwiastki​();
 
 public:
 
+podaj_wspolczynniki​();
+wyswietl_wynik​();
 
 }
 
@@ -33,7 +35,7 @@ void Panel::przetwarzaj(){
     podaj_wspolczynniki​();
     oblicz_pierwiastki​();
     wyswietl_wynik​();
-    
+
 }
 
 // Zaprojektuj klasę, której zadaniem jest obliczenie pierwiastków równania kwadratowego ax​2​ + bx + c​ = 0.
