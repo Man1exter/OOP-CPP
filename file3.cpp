@@ -1,8 +1,9 @@
 #pragma​ warning(disable: 4996)
 #include <iostream>
+#include <algorithm>
+#include <math.h>
 #include <vector>
 #include <cstdlib>
-#include <math.h>
 #include <ctime>
 
 using namespace std;
@@ -12,30 +13,46 @@ class Panel
 
 private:
 
-oblicz_pierwiastki​();
+void oblicz_pierwiastki();
 
 public:
 
-podaj_wspolczynniki​();
-wyswietl_wynik​();
+void podaj_wspolczynniki();
+void wyswietl_wynik();
+void przetwarzaj();
 
-}
+};
 
 
-int main(){
+
+
+int main()
+{
 
 Panel pierwiastkowy;
 pierwiastkowy.przetwarzaj();
 
-    return 0;
+return 0;
 }
 
-void Panel::przetwarzaj(){
 
-    podaj_wspolczynniki​();
-    oblicz_pierwiastki​();
-    wyswietl_wynik​();
 
+void Panel::oblicz_pierwiastki()
+{
+
+}
+
+
+void Panel::wyswietl_wynik()
+{
+
+}
+
+void Panel::przetwarzaj()
+{
+    podaj_wspolczynniki();
+    oblicz_pierwiastki();
+    wyswietl_wynik();
 }
 
 // Zaprojektuj klasę, której zadaniem jest obliczenie pierwiastków równania kwadratowego ax​2​ + bx + c​ = 0.

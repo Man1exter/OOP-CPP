@@ -93,7 +93,6 @@ for(auto i: tab){
 
 void Panel::przetwarzaj()
 {
-    // czytaj_dane();
     sortuj_dane();
     wyswietl_wynik();
 }
@@ -105,4 +104,4 @@ void Panel::przetwarzaj()
 // Zawartość posortowanej tablicy powinna zostać wyświetlona na ekranie monitora za pomocą publicznej
 // metody ​wyswietl_wynik​.
 
-// Zapewnij, żeby tablica została wyczyszczona przy wyjściu z programu. Wykorzystaj do tego destruktor, który usunie wartości liczbowe z tablicy i poinformuje o tym użytkownika za pomocą stosownego komunikatu.
+// Zapewnij, żeby tablica została wyczyszczona przy wyjściu z programu. Wykorzystaj do tego destruktor, który usunie wartości liczbowe z tablicy i poinformuje o tym użytkownika za //pomocą stosownego komunikatu.
