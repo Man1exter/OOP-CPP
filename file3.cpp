@@ -13,6 +13,9 @@ class Panel
 
 private:
 
+int a,b,c;
+int wynik;
+
 void oblicz_pierwiastki();
 
 public:
