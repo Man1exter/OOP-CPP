@@ -28,7 +28,13 @@ pierwiastkowy.przetwarzaj();
     return 0;
 }
 
+void Panel::przetwarzaj(){
 
+    podaj_wspolczynniki​();
+    oblicz_pierwiastki​();
+    wyswietl_wynik​();
+    
+}
 
 // Zaprojektuj klasę, której zadaniem jest obliczenie pierwiastków równania kwadratowego ax​2​ + bx + c​ = 0.
 
