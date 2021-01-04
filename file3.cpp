@@ -59,6 +59,7 @@ void Panel::przetwarzaj()
 }
 
 // Zaprojektuj klasę, której zadaniem jest obliczenie pierwiastków równania kwadratowego ax​2​ + bx + c​ = 0.
+// delta = b2 - 4 a c
 
 // Klasa powinna zawierać następujące metody:
 
