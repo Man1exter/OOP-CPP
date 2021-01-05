@@ -28,8 +28,6 @@ void przetwarzaj();
 };
 
 
-
-
 int main()
 {
 
@@ -38,7 +36,6 @@ pierwiastkowy.przetwarzaj();
 
 return 0;
 }
-
 
 
 void Panel::oblicz_pierwiastki()
