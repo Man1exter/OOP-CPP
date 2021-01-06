@@ -25,6 +25,9 @@ void podaj_wspolczynniki();
 void wyswietl_wynik();
 void przetwarzaj();
 
+Panel();
+~Panel();
+
 };
 
 
@@ -35,6 +38,10 @@ Panel pierwiastkowy;
 pierwiastkowy.przetwarzaj();
 
 return 0;
+}
+void Panel::podaj_wspolczynniki()
+{
+    
 }
 
 
