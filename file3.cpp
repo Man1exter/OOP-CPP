@@ -15,7 +15,7 @@ private:
 
 int a,b,c;
 int delta;
-int wynik;
+int x1,x2;
 
 void oblicz_pierwiastki();
 
