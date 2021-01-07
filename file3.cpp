@@ -44,6 +44,14 @@ void Panel::podaj_wspolczynniki()
     
 }
 
+Panel::Panel(){
+
+}
+
+Panel::~Panel(){
+    
+}
+
 
 void Panel::oblicz_pierwiastki()
 {
