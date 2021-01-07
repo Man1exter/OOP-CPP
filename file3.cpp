@@ -5,6 +5,7 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
+#include <string>
 
 using namespace std;
 
@@ -17,6 +18,7 @@ float wynik;
 int a,b,c;
 float delta;
 float x1,x2;
+
 
 void oblicz_pierwiastki();
 
@@ -40,8 +42,14 @@ pierwiastkowy.przetwarzaj();
 
 return 0;
 }
+
 void Panel::podaj_wspolczynniki()
 {
+
+cout << "twoje wspolczynniki: " << endl;
+cout << "a: " << a << endl;
+cout << "b: " << b << endl;
+cout << "c: " << c << endl;
     
 }
 
