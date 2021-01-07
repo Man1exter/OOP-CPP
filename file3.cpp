@@ -13,9 +13,10 @@ class Panel
 
 private:
 
+float wynik;
 int a,b,c;
-int delta;
-int x1,x2;
+float delta;
+float x1,x2;
 
 void oblicz_pierwiastki();
 
@@ -59,17 +60,35 @@ cout << endl;
 
 Panel::~Panel(){
 
+cout << endl;
+cout << "Wszystkie dane zostały wyczyszczone!" << endl;
+cout << endl;
+
 }
 
 
 void Panel::oblicz_pierwiastki()
 {
 
+delta = (b*b) * 4 * a * c;
+wynik = sqrt((float)delta);
+
+cout << endl;
+
+x1 = (-b) - sqrt((float)delta) / a * a;
+x2 = (-b) + sqrt((float)delta) / a * a;
+
 }
 
 
 void Panel::wyswietl_wynik()
 {
+
+cout << "delta: " << delta << endl;
+cout << "wynik z delty po przepierwiastkowaniu: " << wynik << endl;
+
+cout << "x1: " << x1 << endl;
+cout << "x2: " << x2 << endl;
 
 }
 
