@@ -46,10 +46,19 @@ void Panel::podaj_wspolczynniki()
 
 Panel::Panel(){
 
+cout << "Podaj wspolczynnik a: " << endl;
+cin >> a; 
+cout << "Podaj wspolczynnik b: " << endl;
+cin >> b; 
+cout << "Podaj wspolczynnik c: " << endl;
+cin >> c; 
+
+cout << endl;
+
 }
 
 Panel::~Panel(){
-    
+
 }
 
 
