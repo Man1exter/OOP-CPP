@@ -10,13 +10,11 @@ using namespace std;
 
 class Panel
 {
-
 private:
 
 int maxLiczby;
 int liczby;
 vector <int> tab;
-
 void sortuj_dane();
 
 public:
@@ -62,9 +60,15 @@ cout << endl;
 }
 
 Panel::~Panel(){
+
     cout << endl;
     cout << "Tablica zostala wyzerowana z randomowych liczb" << endl;
     cout << endl;
+
+    for(int i = 0; i < maxLiczby; i++){
+    tab.erase(tab.begin()+maxLiczby);
+}
+
 }
 
 
@@ -87,6 +91,7 @@ void Panel::przetwarzaj()
     sortuj_dane();
     wyswietl_wynik();
 }
+
 
 // Zmodyfikuj program z zadania 1 tak, aby zamiast odczytywania danych za pomocą metody czytaj_dane​,
 // tablica została zainicjalizowana losowymi wartościami liczbowymi ​w konstruktorze klasy.
