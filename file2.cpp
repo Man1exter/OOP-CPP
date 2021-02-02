@@ -26,7 +26,6 @@ void przetwarzaj();
 
 Panel();
 ~Panel();
-
 };
 
 

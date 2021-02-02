@@ -14,16 +14,13 @@ private:
 int maxLiczby;
 int liczby;
 vector <int> tab;
-
 void czytaj_dane();
 void sortuj_dane();
-
 
 public:
 
 void wyswietl_wynik();
 void przetwarzaj();
-
 };
 
 int main()
@@ -44,12 +41,10 @@ cin >> maxLiczby;
 cout << "Podaj te liczby: " << endl;
 for(int i = 0; i < maxLiczby; i++){
 
-cout << endl;
-
 cin >> liczby;
-cout << "Twoje liczby PRZED sortowaniem: " << endl;
 tab.push_back(liczby);
 }
+cout << "Twoje liczby PRZED sortowaniem: " << endl;
 
 for(auto i: tab){
     cout << i << endl;
