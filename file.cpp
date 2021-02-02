@@ -6,9 +6,6 @@
 
 using namespace std;
 
-
-
-
 class Panel
 {
 
@@ -29,9 +26,6 @@ void przetwarzaj();
 
 };
 
-
-
-
 int main()
 {
 
@@ -40,7 +34,6 @@ liczb.przetwarzaj();
 
 return 0;
 }
-
 
 void Panel::czytaj_dane()
 {
@@ -64,13 +57,10 @@ for(auto i: tab){
 cout << endl;
 }
 
-
-
 void Panel::sortuj_dane()
 {
 sort( tab.begin(), tab.end());
 }
-
 
 void Panel::wyswietl_wynik()
 {
@@ -79,8 +69,6 @@ for(auto i: tab){
     cout << i << endl;
 }
 }
-
-
 
 void Panel::przetwarzaj()
 {

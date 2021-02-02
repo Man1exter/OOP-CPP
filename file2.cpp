@@ -8,9 +8,6 @@
 
 using namespace std;
 
-
-
-
 class Panel
 {
 
@@ -22,7 +19,6 @@ vector <int> tab;
 
 void sortuj_dane();
 
-
 public:
 
 void wyswietl_wynik();
@@ -32,8 +28,6 @@ Panel();
 ~Panel();
 
 };
-
-
 
 
 int main()
@@ -88,8 +82,6 @@ for(auto i: tab){
     cout << i << endl;
 }
 }
-
-
 
 void Panel::przetwarzaj()
 {
