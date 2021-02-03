@@ -42,7 +42,6 @@ Panel::Panel(){
 cout << "Podaj ile randomowych liczb chcesz posortowac: " << endl;
 cin >> maxLiczby;
 
-
 for(int i = 0; i < maxLiczby; i++){
 
 liczby = (( rand() % 99 ) + 1 );
@@ -71,12 +70,10 @@ Panel::~Panel(){
 
 }
 
-
 void Panel::sortuj_dane()
 {
 sort( tab.begin(), tab.end());
 }
-
 
 void Panel::wyswietl_wynik()
 {
@@ -85,7 +82,6 @@ for(auto i: tab){
     cout << i << endl;
 }
 }
-
 void Panel::przetwarzaj()
 {
     sortuj_dane();

@@ -19,7 +19,6 @@ int a,b,c;
 float delta;
 float x1,x2;
 
-
 void oblicz_pierwiastki();
 
 public:
@@ -32,7 +31,6 @@ Panel();
 ~Panel();
 
 };
-
 
 int main()
 {
@@ -74,7 +72,6 @@ cout << endl;
 
 }
 
-
 void Panel::oblicz_pierwiastki()
 {
 
@@ -87,7 +84,6 @@ x1 = (-b) - sqrt((float)delta) / a * a;
 x2 = (-b) + sqrt((float)delta) / a * a;
 
 }
-
 
 void Panel::wyswietl_wynik()
 {
