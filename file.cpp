@@ -8,7 +8,6 @@ using namespace std;
 
 class Panel
 {
-
 private:
 
 int maxLiczby;
